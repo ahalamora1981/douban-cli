@@ -1,0 +1,18 @@
+[project]
+name = "douban-cli-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "requests>=2.33.1",
+]
+
+[project.scripts]
+douban = "main:main"
+
+[[tool.uv.index]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default = true
