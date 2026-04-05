@@ -6,10 +6,9 @@
 
 ```
 douban-cli-project/
-├── src/main.py                        # CLI 核心代码
+├── src/main.py                           # CLI 核心代码
 ├── .agents/skills/douban-movie/SKILL.md  # Agent Skill 定义
-├── douban-movie.skill                 # Skill 安装包（二进制）
-├── pyproject.toml                     # Python 项目配置
+├── pyproject.toml                        # Python 项目配置
 └── README.md
 ```
 
