@@ -6,10 +6,17 @@
 
 ```
 douban-cli-project/
-├── src/main.py                           # CLI 核心代码
-├── .agents/skills/douban-movie/SKILL.md  # Agent Skill 定义
-├── pyproject.toml                        # Python 项目配置
-└── README.md
+├── .agents/
+│   └── skills/
+│       └── douban-movie/
+│           └── SKILL.md                  # Agent Skill 定义（触发词、命令映射）
+├── .gitignore                           # Git 忽略规则
+├── .python-version                      # Python 版本锁定（3.12）
+├── pyproject.toml                       # 项目配置、依赖、CLI 入口
+├── README.md                            # 项目文档
+├── uv.lock                              # 依赖锁定文件
+└── src/
+    └── main.py                          # CLI 核心代码（爬取、解析、格式化）
 ```
 
 - **CLI 工具**：`douban` 命令，提供 `movie-now`、`movie-later`、`movie-info` 三个子命令
