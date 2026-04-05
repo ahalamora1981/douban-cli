@@ -72,7 +72,7 @@ Output fields: `id`, `title`, `release_date`, `genre`, `region`, `want_count`.
 douban movie-info --id <movie_id> [options]
 ```
 
-Returns movie detail including basic info, celebrities, top 10 short comments, and top 10 reviews.
+Returns movie detail including basic info, celebrities, top 20 short comments, and top 20 reviews.
 
 | Option | Default | Description |
 |--------|---------|-------------|
@@ -89,8 +89,8 @@ Output sections:
 - **Basic info**: `id`, `title`, `year`, `genres`, `languages`, `pubdate`, `rating`, `intro`, `comment_count`, `review_count`, `forum_topic_count`
 - **Directors**: `id`, `name`, `latin_name`
 - **Actors**: `id`, `name`, `latin_name`, `character`
-- **Comments** (top 10): `user`, `rating`, `comment`, `create_time`, `vote_count`
-- **Reviews** (top 10): `user`, `rating`, `title`, `abstract`, `useful_count`, `comments_count`, `create_time`
+- **Comments** (top 20): `user`, `rating`, `comment`, `create_time`, `vote_count`
+- **Reviews** (top 20): `user`, `rating`, `title`, `abstract`, `useful_count`, `comments_count`, `create_time`
 
 ## Usage Tips
 
