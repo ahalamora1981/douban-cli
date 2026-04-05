@@ -20,7 +20,7 @@ douban-cli-project/
 ```
 
 - **CLI 工具**：`douban` 命令，提供 `movie-now`、`movie-later`、`movie-info` 三个子命令
-- **Agent Skill**：让 AI 编程助手（如 opencode）理解自然语言意图，自动调用 CLI 获取电影信息
+- **Agent Skill**：让 AI 编程助手（如 OpenCode、Claude Code、Codex、Cursor、GitHub Copilot、Windsurf 等）理解自然语言意图，自动调用 CLI 获取电影信息
 
 ## 环境要求
 
