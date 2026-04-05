@@ -51,12 +51,12 @@ uv pip install -e .
 douban movie-now [选项]
 ```
 
-| 选项 | 默认值 | 说明 |
-|------|--------|------|
+| 选项                | 默认值     | 说明                                       |
+| ------------------- | ---------- | ------------------------------------------ |
 | `--city <城市拼音>` | `shanghai` | 城市，如 `beijing`、`guangzhou`、`chengdu` |
-| `--score <分数>` | `0` | 最低评分筛选，结果按评分降序排列 |
-| `--name <关键词>` | 无 | 按片名模糊搜索 |
-| `--format <格式>` | `csv` | 输出格式：`json`、`csv`、`md`、`text` |
+| `--score <分数>`    | `0`        | 最低评分筛选，结果按评分降序排列           |
+| `--name <关键词>`   | 无         | 按片名模糊搜索                             |
+| `--format <格式>`   | `csv`      | 输出格式：`json`、`csv`、`md`、`text`      |
 
 示例：
 
@@ -79,11 +79,11 @@ douban movie-now --name "流浪" --format md
 douban movie-later [选项]
 ```
 
-| 选项 | 默认值 | 说明 |
-|------|--------|------|
-| `--city <城市拼音>` | `shanghai` | 城市 |
-| `--name <关键词>` | 无 | 按片名模糊搜索 |
-| `--format <格式>` | `csv` | 输出格式：`json`、`csv`、`md`、`text` |
+| 选项                | 默认值     | 说明                                  |
+| ------------------- | ---------- | ------------------------------------- |
+| `--city <城市拼音>` | `shanghai` | 城市                                  |
+| `--name <关键词>`   | 无         | 按片名模糊搜索                        |
+| `--format <格式>`   | `csv`      | 输出格式：`json`、`csv`、`md`、`text` |
 
 示例：
 
@@ -100,10 +100,10 @@ douban movie-later --name "地球" --format text
 douban movie-info --id <电影ID> [选项]
 ```
 
-| 选项 | 默认值 | 说明 |
-|------|--------|------|
-| `--id <ID>` | 必填 | 电影 ID（从 `movie-now` 或 `movie-later` 获取） |
-| `--format <格式>` | `json` | 输出格式：`json`、`md`、`text` |
+| 选项              | 默认值 | 说明                                            |
+| ----------------- | ------ | ----------------------------------------------- |
+| `--id <ID>`       | 必填   | 电影 ID（从 `movie-now` 或 `movie-later` 获取） |
+| `--format <格式>` | `json` | 输出格式：`json`、`md`、`text`                  |
 
 示例：
 
@@ -113,6 +113,7 @@ douban movie-info --id 36697078 --format json
 ```
 
 输出包含：
+
 - **基本信息**：`id`、`title`、`year`、`genres`、`languages`、`pubdate`、`rating`、`intro`、`comment_count`、`review_count`、`forum_topic_count`
 - **导演**：`id`、`name`、`latin_name`
 - **演员**：`id`、`name`、`latin_name`、`character`
@@ -123,16 +124,16 @@ douban movie-info --id 36697078 --format json
 
 城市参数使用拼音，不加空格：
 
-| 城市 | 参数 |
-|------|------|
-| 北京 | `beijing` |
-| 上海 | `shanghai` |
+| 城市 | 参数        |
+| ---- | ----------- |
+| 北京 | `beijing`   |
+| 上海 | `shanghai`  |
 | 广州 | `guangzhou` |
-| 深圳 | `shenzhen` |
-| 成都 | `chengdu` |
-| 杭州 | `hangzhou` |
-| 武汉 | `wuhan` |
-| 南京 | `nanjing` |
+| 深圳 | `shenzhen`  |
+| 成都 | `chengdu`   |
+| 杭州 | `hangzhou`  |
+| 武汉 | `wuhan`     |
+| 南京 | `nanjing`   |
 
 ## Agent Skill 使用指南
 
